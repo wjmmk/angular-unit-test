@@ -15,8 +15,10 @@ export class AppComponent implements OnInit {
   subTitle = 'Estamos creando este ejercicio para comenzar a aprender sobre pruebas unitarias en componentes'
   contentEmoji = ''
   dataSession: any;
+
   form: FormGroup = new FormGroup({})
   isCheck: any;
+
   checkHuman: Array<any> = []
 
   constructor(
@@ -49,7 +51,7 @@ export class AppComponent implements OnInit {
     const password = this.form.value.password;
 
     this.authService.login(email, password)
-      .subscribe(res => this.dataSession = res, //TODO: Objecto usuario 
+      .subscribe(res => this.dataSession = res, //TODO: Objecto usuario
         (err: any) => this.isCheck = 'ERROR_USER')
   }
 }

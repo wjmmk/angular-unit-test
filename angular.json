@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "clase-unit-test:build:production"
+              "buildTarget": "clase-unit-test:build:production"
             },
             "development": {
-              "browserTarget": "clase-unit-test:build:development"
+              "buildTarget": "clase-unit-test:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "clase-unit-test:build"
+            "buildTarget": "clase-unit-test:build"
           }
         },
         "test": {
@@ -102,6 +102,5 @@
         }
       }
     }
-  },
-  "defaultProject": "clase-unit-test"
+  }
 }
